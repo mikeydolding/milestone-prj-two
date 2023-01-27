@@ -1,0 +1,156 @@
+
+<!DOCTYPE html> 
+
+<html>
+
+<head>
+
+<title>Page Title</title>
+
+</head>
+
+<body>
+
+ 
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Page Title</title>
+
+</head>
+
+<body>
+
+<div id="content">
+
+<!--This is a multiple choice question -->
+
+Opt 1<input name ="ques" type="radio"><br>
+
+Opt 2<input name ="ques" type="radio"><br>
+
+Opt 3<input name ="ques" type="radio"><br>
+
+Opt 4<input name ="ques" type="radio">
+
+</div>
+
+<button onclick="submitquestion()"> Submit Question</button>
+
+<script src="draftProject2 script.js"></script>
+
+
+</script>
+
+<script>
+
+counter=0;
+
+//questions=[
+
+ //Type 1 is Multichoice
+ //Type 2 is True or False
+ //Type 3 is Multiple choice
+
+ //{Type:1,Question: "what which are even numbers", a:5,b:6,c:7,d:9,correct:[5,6]},
+
+ //{Type:2,Question: "what is 2 + 3", a:true,b:false,correct:false},
+
+ //{Type:3,Question: "which is a prime number", a:8,b:6,c:7,d:9,correct:7},
+
+  //{Type:3,Question: "which is a square number", a:5,b:6,c:7,d:9,correct:7}
+
+ 
+
+//]
+
+ 
+
+ 
+
+ 
+
+function submitquestion()
+
+{
+
+ let display=document.querySelector("#content");
+
+ 
+
+if(questions[counter].Type==1)
+
+{
+
+ let replacement=questions[counter].Question + '<br>' + 
+ questions[counter].a +'<input name ="ques" type="checkbox"><br>' +
+ questions[counter].b +'<input name ="ques" type="checkbox"><br>' +
+ questions[counter].c +'<input name ="ques" type="checkbox"><br>' +
+ questions[counter].d +'<input name ="ques" type="checkbox">'
+
+ display.innerHTML=replacement;
+
+}
+
+ 
+
+if(questions[counter].Type==2)
+
+{
+
+ let display=document.querySelector("#content");
+
+ let replacement=questions[counter].Question + '<br>' +' TRUE<input name ="ques" type="radio"><br>' +
+
+'FALSE<input name ="ques" type="radio"><br>' //+
+
+ display.innerHTML=replacement;
+
+}
+
+ 
+
+ 
+
+if(questions[counter].Type==3)
+
+{
+
+ let replacement=questions[counter].Question + '<br>' +' Opt 1<input name ="ques" type="radio"><br>' +
+
+'Opt 2<input name ="ques" type="radio"><br>' +
+
+'Opt 3<input name ="ques" type="radio"><br>' +
+
+'Opt 4<input name ="ques" type="radio">'
+
+ display.innerHTML=replacement;
+
+}
+
+ 
+
+counter++;
+
+}
+
+ 
+
+</script>
+
+
+</body>
+
+</html>
+
+ 
+
+</body>
+
+</html>
+
+
