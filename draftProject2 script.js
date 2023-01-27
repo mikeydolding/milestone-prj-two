@@ -89,9 +89,6 @@ a:"An offeror is free to withdraw at any time before acceptance takes place",
 
   d:"An offeror can not withdraw an offer where a deposit has been paid",
    
-correct:""
+correct:"a"
 }
-
-
-
 ]

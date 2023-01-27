@@ -119,14 +119,12 @@ if(questions[counter].Type==2)
 if(questions[counter].Type==3)
 
 {
+let replacement=questions[counter].Question + '<br>' + 
+ questions[counter].a +'<input name ="ques" type="radio"><br>' +
+ questions[counter].b +'<input name ="ques" type="radio"><br>' +
+ questions[counter].c +'<input name ="ques" type="radio"><br>' +
++ ' abcde' + questions[counter].d +'<input name ="ques" type="radio">'
 
- let replacement=questions[counter].Question + '<br>' +' Opt 1<input name ="ques" type="radio"><br>' +
-
-'Opt 2<input name ="ques" type="radio"><br>' +
-
-'Opt 3<input name ="ques" type="radio"><br>' +
-
-'Opt 4<input name ="ques" type="radio">'
 
  display.innerHTML=replacement;
 
