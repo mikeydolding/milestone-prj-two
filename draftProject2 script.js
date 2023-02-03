@@ -31,13 +31,17 @@ const questions = [
   //Type 2 is True or False
   //Type 3 is Multiple choice
  
-  {Type:1,Question: " Which of the following is not true in relation to unilateral contracts ",
+  {Type:1,Question: " Which of the following is not 
+  true in relation to unilateral contracts ",
    a:5,b:6,c:7,d:9,correct:[5,6]},
  
-  {Type:2,Question: "True or false, it is an offence to deface a United Kingdom banknote by writing on it?",
+  {Type:2,Question: 
+    "True or false, it is an offence to deface a United Kingdom banknote by writing on it?",
    a:true,b:false,correct:false},
  
-  {Type:3,Question: " Which of the following is not correct in relation to withdrawing an offer",
+  {Type:3,Question: 
+    " Which of the following is 
+    not correct in relation to withdrawing an offer",
    a:8,b:6,c:7,d:9,correct:7},
  
    
