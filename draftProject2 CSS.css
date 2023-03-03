@@ -4,6 +4,7 @@ background-color:  #739dc5;
 
 }
 
+
 #center {
   margin: auto;
   width: 50%;
@@ -21,4 +22,11 @@ background-color:  #739dc5;
     padding: 10px;
     background-color:  #890404;*/
   }
+
+  input 
+  { width: 6vw ;
+    height: 6vh;
+
+  }
+
 
