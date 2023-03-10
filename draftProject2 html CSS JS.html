@@ -78,10 +78,10 @@ if(questions[counter].Type==1)
 {
 
  let replacement=questions[counter].Question + '<br>' + 
- 'A<input name ="ques" type="checkbox">' +  questions[counter].a + '<br>'+
- 'B<input name ="ques" type="checkbox">' +  questions[counter].b + '<br>'+
- 'C<input name ="ques" type="checkbox">' +  questions[counter].c + '<br>'+
- 'D<input name ="ques" type="checkbox">' +  questions[counter].d + '<br>'
+ 'A<div class="item"><input name ="ques" type="checkbox"></div>' + '<div class="item">'  + questions[counter].a + '</div>' + '<br>' +
+ 'B<div  class="item"><input name ="ques" type="checkbox"></div>' + '<div class="item">'  + questions[counter].b + '</div>' + '<br>' +
+ 'D<div>  class="item"><input name ="ques" type="checkbox"></div>' +  '<div class="item">'  + questions[counter].c + '</div>' + '<br>' +
+ 'C<div> class="item"><input name ="ques" type="checkbox"></div>' +  '<div class="item">'  + questions[counter].d + '</div>' + '<br>' +
 
  display.innerHTML=replacement;
 
