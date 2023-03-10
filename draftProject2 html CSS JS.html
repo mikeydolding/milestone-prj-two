@@ -6,14 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="draftProject2 CSS.css" rel="stylesheet">
-
-  
-
-  
   </head>
 <body>
-
-
   <header> 
     <div>
   <img src="image\banner.webp" width="50%">
@@ -23,12 +17,14 @@
 <div id="center">
 <div id="content">
 
+
 This is a multiple choice question  <br>
 
-<div class="item">Opt 1</div><div class="item"><input name="ques"  type="radio"></div>div><br>
-<div class="item">Opt 2</div><div class="item"><input name="ques"  type="radio"></div>div><br>
-<div class="item">Opt 3</div><div class="item"><input name="ques"  type="radio"></div>div><br>
-<div class="item">Opt 4</div><div class="item"><input name="ques"  type="radio"></div>div><br>
+
+<div class="item">Opt 1</div><div><input name ="ques" type="radio"></div><br>
+<div class="item">Opt 2</div><div><input name ="ques" type="radio"></div><br>
+<div class="item">Opt 3</div><div><input name ="ques" type="radio"></div><br>
+<div class="item">Opt 4</div><div><input name ="ques" type="radio"></div>
 
 
 </div>
@@ -70,17 +66,15 @@ function submitquestion()
 
  let display=document.querySelector("#content");
 
- 
-
 if(questions[counter].Type==1)
 
 {
 
  let replacement=questions[counter].Question + '<br>' + 
- 'A<div class="item"><input name ="ques" type="checkbox"></div>' + '<div class="item">'  + questions[counter].a + '</div>' + '<br>' +
- 'B<div  class="item"><input name ="ques" type="checkbox"></div>' + '<div class="item">'  + questions[counter].b + '</div>' + '<br>' +
- 'D<div>  class="item"><input name ="ques" type="checkbox"></div>' +  '<div class="item">'  + questions[counter].c + '</div>' + '<br>' +
- 'C<div> class="item"><input name ="ques" type="checkbox"></div>' +  '<div class="item">'  + questions[counter].d + '</div>' + '<br>' +
+ 'A<input name ="ques" type="checkbox">' +  questions[counter].a + '<br>'+
+ 'B<input name ="ques" type="checkbox">' +  questions[counter].b + '<br>'+
+ 'C<input name ="ques" type="checkbox">' +  questions[counter].c + '<br>'+
+ 'D<input name ="ques" type="checkbox">' +  questions[counter].d + '<br>'
 
  display.innerHTML=replacement;
 
@@ -102,8 +96,6 @@ if(questions[counter].Type==2)
  display.innerHTML=replacement;
 
 }
-
- 
 
  
 
@@ -135,6 +127,11 @@ counter++;
 </body>
 
 </html>
+
+
+
+
+
 
 
 
