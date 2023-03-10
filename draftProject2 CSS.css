@@ -49,3 +49,17 @@ header {
   justify-content: center;
   text-align: center;
 }
+
+/* grip-gap: 20px; */
+
+.grid-container2 { 
+  display: grid;
+  grid-template-columns: 1fr 5fr; 
+  background-color: #f1f1f1;
+  grid-column-gap: 2vw;
+  grid-row-gap: 2vh;
+  width: 80%; 
+
+}
+/* grip-gap: 20px;*/ 
+
