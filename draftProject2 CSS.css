@@ -20,9 +20,9 @@ background-color:  #739dc5;
 #center {
   margin: auto;
   width: 50%;
-  border: 3px solid green;
+ /* border: 3px solid green;*/
   padding: 10px;
-  background-color:  #890404;
+ /* background-color:  #890404;*/
   }
 
 
@@ -54,7 +54,17 @@ header {
 
 .grid-container2 { 
   display: grid;
-  grid-template-columns: 1fr 5fr; 
+  grid-template-columns: 1fr 1fr 5fr; 
+  background-color: #f1f1f1;
+  grid-column-gap: 2vw;
+  grid-row-gap: 2vh;
+  width: 80%; 
+
+}
+
+.grid-container { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 5fr; 
   background-color: #f1f1f1;
   grid-column-gap: 2vw;
   grid-row-gap: 2vh;
