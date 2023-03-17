@@ -103,17 +103,19 @@ if(questions[counter].Type==2)
 if(questions[counter].Type==3)
 
 {
-let replacement=questions[counter].Question + '<br>' + 
- '<div class= A </div> <div class="item > <input name ="ques" type="radio"> </div> <div class="item">' +  questions[counter].a + '<br>'+
-  '<div class= B </div> <div class="item > <input name ="ques" type="radio"> </div> <div class="item">' +  questions[counter].b + '<br>'+
-  '<div class=C </div> <div class="item > <input name ="ques" type="radio"> </div> <div class="item">' +  questions[counter].c + '<br>'+
-  '<div class= D </div> <div class="item > <input name ="ques" type="radio"> </div> <div class="item">' +  questions[counter].d + '<br>'+
+let replacement= '<div class="item">' + questions[counter].Question + '</div> <div class="item"> a</div> <div class="item"> </div>' +
+ '<div class="item"> A </div> <div class="item" > <input name ="ques" type="radio"> </div> <div class="item">' +  questions[counter].a + ' </div>'+
+  '<div class="item"> B </div> <div class="item"> <input name ="ques" type="radio"> </div> <div class="item">' +  questions[counter].b + ' </div>'+   
+  '<div class="item"> SC </div> <div class="item ""> <input name ="ques" type="radio"> </div> <div class="item">' +  questions[counter].c + '</div>'+
+  '<div class= "item"> D </div> <div class="item" > <input name ="ques" type="radio"> </div> <div class="item">' +  questions[counter].d + '</div>'
 
   
 
  display.innerHTML=replacement;
 
 }
+
+
 
  
 
