@@ -104,11 +104,12 @@ if(questions[counter].Type==3)
 
 {
 let replacement=questions[counter].Question + '<br>' + 
- 'A<input name ="ques" type="radio">' +  questions[counter].a + '<br>'+
-'B<input name ="ques" type="radio">' +  questions[counter].b + '<br>'+
-'C<input name ="ques" type="radio">' +  questions[counter].c + '<br>'+
- 'D<input name ="ques" type="radio">'+  questions[counter].d 
+ '<div class= A </div> <div class="item > <input name ="ques" type="radio"> </div> <div class="item">' +  questions[counter].a + '<br>'+
+  '<div class= B </div> <div class="item > <input name ="ques" type="radio"> </div> <div class="item">' +  questions[counter].b + '<br>'+
+  '<div class=C </div> <div class="item > <input name ="ques" type="radio"> </div> <div class="item">' +  questions[counter].c + '<br>'+
+  '<div class= D </div> <div class="item > <input name ="ques" type="radio"> </div> <div class="item">' +  questions[counter].d + '<br>'+
 
+  
 
  display.innerHTML=replacement;
 
