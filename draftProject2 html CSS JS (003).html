@@ -76,10 +76,10 @@ function submitquestion()
 if(questions[counter].Type==1)
 
 {
-  let replacement= '<div class="item">' + questions[counter].Question + '</div> <div class="item"> a</div> <div class="item"> </div>' +
+  let replacement= '<div class="item"></div> <div class="item"> a</div> <div class="item"> ' + questions[counter].Question + ' </div>' +
  '<div class="item"> A </div> <div class="item" > <input name ="ques" type="checkbox"> </div> <div class="item">' +  questions[counter].a + ' </div>'+
   '<div class="item"> B </div> <div class="item"> <input name ="ques" type="checkbox"> </div> <div class="item">' +  questions[counter].b + ' </div>'+   
-  '<div class="item"> SC </div> <div class="item ""> <input name ="ques" type="checkbox"> </div> <div class="item">' +  questions[counter].c + '</div>'+
+  '<div class="item"> C </div> <div class="item ""> <input name ="ques" type="checkbox"> </div> <div class="item">' +  questions[counter].c + '</div>'+
   '<div class= "item"> D </div> <div class="item" > <input name ="ques" type="checkbox"> </div> <div class="item">' +  questions[counter].d + '</div>'
 
   

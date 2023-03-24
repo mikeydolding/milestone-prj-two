@@ -45,7 +45,7 @@ const questions = [
  
    
 
-{Type:3,Question : " Which of the following is not true in relation to unilateral contracts ",
+{Type:1,Question : " Which of the following is not true in relation to unilateral contracts ",
 
 
 a: "Only one party makes a promise",
