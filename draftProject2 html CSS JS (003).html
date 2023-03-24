@@ -52,13 +52,13 @@ counter=0;
 
  //{Type:2,Question: "what is 2 + 3", a:true,b:false,correct:false},
 
- {Type:3,Question: "which is a prime number", a:8,b:6,c:7,d:9,correct:7},
+ //{Type:3,Question: "which is a prime number", a:8,b:6,c:7,d:9,correct:7},
 
   //{Type:3,Question: "which is a square number", a:5,b:6,c:7,d:9,correct:7}
 
  
 
-]
+//]
 
 function submitquestion()
 
@@ -69,12 +69,23 @@ function submitquestion()
 if(questions[counter].Type==1)
 
 {
+  let replacement= '<div class="item">' + questions[counter].Question + '</div> <div class="item"> a</div> <div class="item"> </div>' +
+ '<div class="item"> A </div> <div class="item" > <input name ="ques" type="checkbox"> </div> <div class="item">' +  questions[counter].a + ' </div>'+
+  '<div class="item"> B </div> <div class="item"> <input name ="ques" type="checkbox"> </div> <div class="item">' +  questions[counter].b + ' </div>'+   
+  '<div class="item"> SC </div> <div class="item ""> <input name ="ques" type="checkbox"> </div> <div class="item">' +  questions[counter].c + '</div>'+
+  '<div class= "item"> D </div> <div class="item" > <input name ="ques" type="checkbox"> </div> <div class="item">' +  questions[counter].d + '</div>'
 
+  
+
+
+
+
+/*
  let replacement=questions[counter].Question + '<br>' + 
  'A<input name ="ques" type="checkbox">' +  questions[counter].a + '<br>'+
  'B<input name ="ques" type="checkbox">' +  questions[counter].b + '<br>'+
  'C<input name ="ques" type="checkbox">' +  questions[counter].c + '<br>'+
- 'D<input name ="ques" type="checkbox">' +  questions[counter].d + '<br>'
+ 'D<input name ="ques" type="checkbox">' +  questions[counter].d + '<br>'*/
 
  display.innerHTML=replacement;
 

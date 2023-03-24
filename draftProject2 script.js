@@ -31,7 +31,7 @@ const questions = [
   //Type 2 is True or False
   //Type 3 is Multiple choice
  
-   /*
+   
   {Type:1,Question: " Which of the following is not true in relation to unilateral contracts ",
    a:5,b:6,c:7,d:10,correct:[5,6]},
  
@@ -43,7 +43,7 @@ const questions = [
     " Which of the following is not correct in relation to withdrawing an offer",
    a:8,b:6,c:7,d:9,correct:7},
  
-   */
+   
 
 {Type:3,Question : " Which of the following is not true in relation to unilateral contracts ",
 
