@@ -10,6 +10,11 @@ background-color:  #739dc5;
   background-color: dodgerblue;
 }
 
+.item:hover{
+
+  background-color: red;
+}
+
 
 .item2{
 
