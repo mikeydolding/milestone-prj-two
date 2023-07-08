@@ -3,11 +3,11 @@ const questions = [
     Type: 1,
     Question:
       " Which of the following is not true in relation to unilateral contracts ",
-    a: " Only one party makes a promise ",
-    b: " Acceptance requires full performance of the contract",
+    a: "Only one party makes a promise ",
+    b: "Acceptance requires full performance of the contract",
     c: "The offeror may withdraw the offerat anytime before acceptance takes place",
     d: "The offeree need not communicate their intention to accept the offer",
-    correct: ["b", "c"],
+    correct: "b",
   },
 
   {
@@ -16,7 +16,7 @@ const questions = [
       "True or false, it is an offence to deface a United Kingdom banknote by writing on it?",
     a: true,
     b: false,
-    correct: false,
+    correct: "b",
   },
 
   {

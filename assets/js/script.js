@@ -1,29 +1,28 @@
-score = 0;
+score = [];
 answers = [];
 counter = 0;
 const results = document.getElementById("answers");
-const questionum = document.getElementById("questionnumber");
-const counternum = document.getElementById("counternumber");
-
-
-function change_score() {
-  alert("correct answer  " + questions[counter].correct.toString());
-  alert("user answer is " + userAnswer.toString());
-  const userAnswer = document.getElementsByClassname("A");
-  if (userAnswer.toString() == questions[counter].correct.toString()) {
-    score = scrore + 1;
-    alert("Score is now" + score);
-  }
-}
+const finalscore = document.getElementById("score");
+a = "a";
+b = "b";
+c = "c";
+d = "d";
 
 function lastpage() {
+  let total = 0;
+
+  for (const value of score) {
+    total += value;
+  }
+ console.log(total)
   for (let i = 0; i < counter.length; i++) {
     results.innerHTML = answers[i];
   }
+
   let replacement = "<h1> Quiz completed </h1>";
   let display = document.querySelector("#content");
   display.innerHTML = replacement;
-
+  finalscore.innerHTML = total;
 }
 
 function startagain() {
@@ -34,58 +33,32 @@ function startagain() {
 }
 function displaynextquestion() {
   counter++;
+  console.log(score);
+
   if (counter == questions.length) {
     lastpage();
   }
-  if (counter < questions.length) 
-  displayquestion();
+  if (counter < questions.length) displayquestion();
   results.innerHTML = answers;
-  questionum.innerHTML = questions[counter].Type
-  counternum.innerHTML = counter + 1
-
 }
 function displaypreviousquestion() {
   if (counter > 0) counter--;
   displayquestion();
-  questionum.innerHTML = questions[counter].Type
-  counternum.innerHTML = counter + 1
-
 }
 
 function displayfirstquestion() {
   displayquestion();
-  questionum.innerHTML = questions[counter].Type
-  counternum.innerHTML = counter + 1
 }
 
-function checkanswer() {
-  change_score();
-  if (questions[counter].Type == 1) {
-    const list = document.getElementsByClassName("A");
-    if (list[0].checked == true) {
-      alert("You have been chosen A");
-
-      alert("you have been entered" + list);
-    }
-
-    alert("Right answer is C");
-  }
-
-  if (questions[counter].Type == 2) {
-    alert("Right answer is False");
-  }
-
-  if (questions[counter].Type == 3) {
-    alert("Right answer is A");
-  }
-}
-
-//function prevquestion() {
-//  counter = counter - 1;
-//}
-
-function recordanswer(element, user_choice) {
+function recordanswer(element, user_choice, correct_answer) {
+  console.log(element.toString());
+  console.log(correct_answer);
   answers[counter] = user_choice;
+  if (element == correct_answer) {
+    score[counter] = 1;
+  } else {
+    score[counter] = 0;
+  }
   for (let i = 0; i < counter.length; i++) {
     results.innerHTML = answers[i];
   }
@@ -99,16 +72,16 @@ function displayquestion() {
       '<div class="item"></div> <div class="item"> </div> <div class="item"> ' +
       questions[counter].Question +
       " </div>" +
-      '<div class="item"> A </div> <div class="item" > <input name ="ques" type="checkbox" onclick="recordanswer(this,questions[counter].a)"> </div> <div class="item">' +
+      '<div class="item"> A </div> <div class="item" > <input name ="ques" type="checkbox" onclick="recordanswer(a,questions[counter].a,questions[counter].correct)"> </div> <div class="item">' +
       questions[counter].a +
       " </div>" +
-      '<div class="item"> B </div> <div class="item"> <input name ="ques" type="checkbox" onclick="recordanswer(this,questions[counter].b)"> </div> <div class="item">' +
+      '<div class="item"> B </div> <div class="item"> <input name ="ques" type="checkbox" onclick="recordanswer(b,questions[counter].b,questions[counter].correct)"> </div> <div class="item">' +
       questions[counter].b +
       " </div>" +
-      '<div class="item"> C </div> <div class="item ""> <input name ="ques" type="checkbox" onclick="recordanswer(this,questions[counter].c)"> </div> <div class="item">' +
+      '<div class="item"> C </div> <div class="item ""> <input name ="ques" type="checkbox" onclick="recordanswer(c,questions[counter].c,questions[counter].correct)"> </div> <div class="item">' +
       questions[counter].c +
       "</div>" +
-      '<div class= "item"> D </div> <div class="item" > <input name ="ques" type="checkbox" onclick="recordanswer(this,questions[counter].d)"> </div> <div class="item">' +
+      '<div class= "item"> D </div> <div class="item" > <input name ="ques" type="checkbox" onclick="recordanswer(d,questions[counter].d,questions[counter].correct)"> </div> <div class="item">' +
       questions[counter].d +
       "</div>";
 
@@ -121,10 +94,10 @@ function displayquestion() {
       '<div class="item"> </div> <div class="item"> </div> <div class="item">' +
       questions[counter].Question +
       "</div>" +
-      '<div class="item"> A </div> <div class="item" > <input name ="ques" type="radio" onclick="recordanswer(this,questions[counter].a)"> </div> <div class="item">' +
+      '<div class="item"> A </div> <div class="item" > <input name ="ques" type="radio" onclick="recordanswer(a,questions[counter].a,questions[counter].correct)"> </div> <div class="item">' +
       questions[counter].a +
       " </div>" +
-      '<div class="item"> B </div> <div class="item"> <input name ="ques" type="radio" onclick="recordanswer(this,questions[counter].b)"> </div> <div class="item">' +
+      '<div class="item"> B </div> <div class="item"> <input name ="ques" type="radio" onclick="recordanswer(b,questions[counter].b,questions[counter].correct)"> </div> <div class="item">' +
       questions[counter].b +
       " </div>";
     display.innerHTML = replacement;
@@ -135,16 +108,16 @@ function displayquestion() {
       '<div class="item"> </div> <div class="item"> </div> <div class="item"> ' +
       questions[counter].Question +
       "  </div>" +
-      '<div class="item"> A </div> <div class="item" > <input name ="ques" type="radio" onclick="recordanswer(this,questions[counter].a)"> </div> <div class="item">' +
+      '<div class="item"> A </div> <div class="item" > <input name ="ques" type="radio" onclick="recordanswer(a,questions[counter].a,questions[counter].correct)"> </div> <div class="item">' +
       questions[counter].a +
       " </div>" +
-      '<div class="item"> B </div> <div class="item"> <input name ="ques" type="radio" onclick="recordanswer(this,questions[counter].b)"> </div> <div class="item">' +
+      '<div class="item"> B </div> <div class="item"> <input name ="ques" type="radio" onclick="recordanswer(b,questions[counter].b,questions[counter].correct)"> </div> <div class="item">' +
       questions[counter].b +
       " </div>" +
-      '<div class="item"> C </div> <div class="item ""> <input name ="ques" type="radio" onclick="recordanswer(this,questions[counter].c)"> </div> <div class="item">' +
+      '<div class="item"> C </div> <div class="item ""> <input name ="ques" type="radio" onclick="recordanswer(c,questions[counter].c,questions[counter].correct)"> </div> <div class="item">' +
       questions[counter].c +
       "</div>" +
-      '<div class= "item"> D </div> <div class="item" > <input name ="ques" type="radio" onclick="recordanswer(this,questions[counter].d)"> </div> <div class="item">' +
+      '<div class= "item"> D </div> <div class="item" > <input name ="ques" type="radio" onclick="recordanswer(d,questions[counter].d,questions[counter].correct)"> </div> <div class="item">' +
       questions[counter].d +
       "</div>";
     display.innerHTML = replacement;

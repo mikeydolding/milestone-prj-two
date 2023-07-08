@@ -139,3 +139,4 @@ git clone https://mikeydolding.github.io/milestone-prj-two/
 - My Mentor for continuous helpful feedback.
 
 - Tutor support at Code Institute for their support.
+https://bobbyhadz.com/blog/javascript-get-sum-of-array-of-numbers
