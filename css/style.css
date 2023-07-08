@@ -1,0 +1,126 @@
+
+
+
+
+
+
+
+
+
+
+body { 
+
+    background-color:  #739dc5; 
+    font-size: 3vh;
+    font-family:  Arial;
+    }
+    
+    
+    .item{
+    
+      background-color: dodgerblue;
+    }
+    
+    .item:hover{
+    
+      background-color: red;
+    }
+    
+    
+    .item2{
+    
+      background-color:lightgreen ;
+    }
+    
+    
+    #center {
+      margin: auto;
+      width: 50%;
+     /* border: 3px solid green;*/
+      padding: 10px;
+     /* background-color:  #890404;*/
+      }
+    
+    
+      #content {
+        border: 3px solid green;
+        margin: auto;
+        width: 100%;
+        border: 3px solid green;
+        padding: 50px;
+        background-color:  #890404;
+      }
+    
+      input 
+      { width: 6vw ;
+        height: 6vh;
+      }
+    
+    
+     
+    
+    
+    header {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    /* grip-gap: 20px; */
+    
+    .grid-container2 { 
+      display: grid;
+      grid-template-columns: 1fr 1fr 5fr; 
+      background-color: #f1f1f1;
+      grid-column-gap: 2vw;
+      grid-row-gap: 2vh;
+      width: 80%; 
+    
+    }
+    
+    .grid-container { 
+      display: grid;
+      grid-template-columns: 1fr 1fr 5fr; 
+      background-color: #f1f1f1;
+      grid-column-gap: 2vw;
+      grid-row-gap: 2vh;
+      width: 80%; 
+    
+    }
+    /* grip-gap: 20px;*/ 
+    
+    item:hover{background-color: red;}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
