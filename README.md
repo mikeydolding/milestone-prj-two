@@ -22,13 +22,6 @@
 
 Simple website for a quiz. The site can be reused iby replacineg specifically formatted javascript questions file.
 
-- Logo
-- HTML5
-- CSS3 code
-- Bootstrap
-- Jquery
-- Javascript
-
 ## User Experience (UX)
 
 - #### First Time Visitor Goals
@@ -42,32 +35,25 @@ Simple website for a quiz. The site can be reused iby replacineg specifically fo
 
      1. The site has previous and next navigation options at the bottom.
 
-- #### Returning Visitor Goals
-
-  1. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
-
-     1. The navigation bar and home page clearly highlights the "Contact Us" Page and contact details of the company.
-
 ### Design
 
 - #### Colour Scheme
 
-  - The two main colours used are Code Insititue light blue, white, black.
+  - The two main colours used are Code Insititue light blue, red, black which are similar colors of the logo.
 
 - #### Typography
 
-  - The Roboto font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Roboto is a clean font used frequently in programming, so it is both attractive and appropriate.
+  - The default standard available web font family used is Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 - #### Imagery
-  - Imagery is important. The large Logo is designed to be striking and catch the user's attention. It also has a modern, energetic aesthetic.
+
+  - Imagery is important. The large Logo is <https://www.shutterstock.com/image-vector/binary-code-background-vector-illustration-blockchain-1142347682> is designed to be striking and catch the user's attention and has a modern, energetic aesthetic.
 
 ### Features
 
 - Responsive on all device sizes using Bootstrap
 
 - Interactive elements (menu)
-
-## Technologies Used
 
 ### Languages Used
 
@@ -80,18 +66,12 @@ Simple website for a quiz. The site can be reused iby replacineg specifically fo
 
 1. [Bootstrap 5.2.3:](https://getbootstrap.com/docs/5.1/)
    - Bootstrap was used to assist with the responsiveness and styling of the website.
-2. [Google Fonts:](https://fonts.google.com/)
-   - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
-3. [Font Awesome:](https://fontawesome.com/)
-   - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
-4. [jQuery:](https://jquery.com/)
+2. [jQuery:](https://jquery.com/)
    - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
-5. [Git](https://git-scm.com/)
+3. [Git](https://git-scm.com/)
    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-6. [GitHub:](https://github.com/)
+4. [GitHub:](https://github.com/)
    - GitHub is used to store the projects code after being pushed from Git.
-7. [Gimp:](https://www.gimp.com
-   - Photoshop was used to create the logo, resizing images and editing photos for the website.
 
 ### Testing
 
@@ -128,18 +108,23 @@ The project was deployed to GitHub Pages using the following steps...
 5. Change the current working directory to the location where you want the cloned directory to be made.
 6. Type `git clone`, and then paste the URL you copied in Step 3.
 
-git clone https://mikeydolding.github.io/milestone-prj-two/
+git clone <https://mikeydolding.github.io/milestone-prj-two/>
 
 ## Credits
 
 ### Code
 
-- [Bootstrap 5.2.3:](https://getbootstrap.com/docs/5.2.3/)
-  : Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
+- [Bootstrap 5.2.3:](https://getbootstrap.com/docs/5.2.3/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
+- [quiz-app](https://doganenes.github.io/quiz-app/](https://doganenes.github.io/quiz-app/): Quiz App Project using HTML5, CSS3, Javascript, and Bootstrap.
+
+- [Sum of array of numbers](https://bobbyhadz.com/blog/javascript-get-sum-of-array-of-numbers): Javascript get sum of array number.
+
+### Media
+
+- legaltech.png, [Shutterstock](https://www.shutterstock.com/image-vector/binary-code-background-vector-illustration-blockchain-1142347682) CC BY-SA 4.0, via Wikimedia Commons
 
 ### Acknowledgements
 
 - My Mentor for continuous helpful feedback.
 
 - Tutor support at Code Institute for their support.
-https://bobbyhadz.com/blog/javascript-get-sum-of-array-of-numbers
