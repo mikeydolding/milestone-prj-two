@@ -1,6 +1,6 @@
 <h1 align="center">Mikedolding Milestone Project 2</h1>
 
-- [Webfree Legal Tech](#WebfreeLegalTech)
+- [Web Legal Quiz](#WebfreeLegalTech)
   - [Overview](#overview)
   - [User Experience (UX)](#User-Experience)
   - [Design](#design)
@@ -16,7 +16,7 @@
   - [Credits & Attributions](#credits)
   - [Acknowledgements](#acknowledgements)
 
-## WebfreeLegalTech [View the live project here.](https://mikeydolding.github.io/milestone-prj-one/)
+## WebfreeLegalTech [View the live project here.](https://mikeydolding.github.io/milestone-prj-two/)
 
 ## Overview
 
@@ -100,7 +100,7 @@ In testing the simple website worked without bugs.
 
 - The site was last deployed to the github-pages environment by the pages build and deployment workflow.
 
-- The site is live at <https://mikeydolding.github.io/milestone-prj-one/>
+- The site is live at <https://mikeydolding.github.io/milestone-prj-two/>
 
 - In further development, an independant dedicated API and database of news content will be built for the website.
 
@@ -125,7 +125,7 @@ The project was deployed to GitHub Pages using the following steps...
 5. Change the current working directory to the location where you want the cloned directory to be made.
 6. Type `git clone`, and then paste the URL you copied in Step 3.
 
-git clone https://mikeydolding.github.io/milestone-prj-one/
+git clone https://mikeydolding.github.io/milestone-prj-two/
 
 ## Credits
 
