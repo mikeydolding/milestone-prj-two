@@ -78,6 +78,7 @@ Simple website for a quiz. The site can be reused iby replacineg specifically fo
 In testing the  website worked on github pages. In testing on mobile, however, a number of bugs were discovered:
 
 - Layout not optimised. Mob howile, however beyond the scope of the assessment.
+- ![validated HTML and CSS code](assets/images/ESLint.png)
 
 ## Deployment
 
