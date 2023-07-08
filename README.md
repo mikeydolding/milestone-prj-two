@@ -121,7 +121,7 @@ git clone <https://mikeydolding.github.io/milestone-prj-two/>
 
 ### Media
 
-- legaltech.png, [Shutterstock](https://www.shutterstock.com/image-vector/binary-code-background-vector-illustration-blockchain-1142347682) CC BY-SA 4.0, via Wikimedia Commons
+- legaltech.png, [Shutterstock](https://www.shutterstock.com/image-vector/binary-code-background-vector-illustration-blockchain-1142347682)
 
 ### Acknowledgements
 
