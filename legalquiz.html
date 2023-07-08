@@ -4,17 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
 <title>Document</title>
-  <link href="css/style.css" rel="stylesheet">
   </head>
 <body onload="displayfirstquestion()">
   <header> 
     <div>
-      <img src="images/legaltech.jpg" width="50%">     
+      <img src="assets/images/legaltech.jpg" width="50%">     
   </div>  
     </header>
 
@@ -28,17 +26,15 @@
 </div>
 </div>
 
-<button class="btn-warning"   onclick="displaynextquestion()"> next</button>
-<button class="btn-warning"    onclick="displaypreviousquestion()">  prev </button> 
-<button class="btn-warning"    onclick="checkanswer()">  check answer </button> 
-<button class="btn-warning"    onclick="startagain()"> start again  </button>           
-
-<script src="question.js"></script>
-</script>
-
-
-<script src='js/script.js'>
-</script>
+<button class="btn btn-warning"   onclick="displaynextquestion()"> next</button>
+<button class="btn btn-warning"    onclick="displaypreviousquestion()">  prev </button> 
+<button class="btn btn-warning" onclick="checkanswer()">  check answer </button> 
+<button class="btn btn-warning" onclick="startagain()"> start again  </button>           
+             
+<script src="assets/js/jquery.min.jsm.js"></script>
+<script src="assets/js/bootstrap/bootstrap.min.js"></script>
+<script src="assets/js/question.js"></script>
+<script src='assets/js/script.js'></script>
 </body>
 </html>
 
