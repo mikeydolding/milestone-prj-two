@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
-    <title>Document</title>
-  </head>
-  <body onload="displayfirstquestion()">
-    <header>
-     
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
-    <div id="center">
-      <!--id="content" -->
-      <div class="grid-container" id="content">
-        <div class="item">Opt 1</div>
-        <div class="item"><input class="A" name="ques" type="radio" /></div>
-        <div class="item">Ques 1</div>
-        <div class="item">Opt 2</div>
-        <div class="item"><input class="A" name="ques" type="radio" /></div>
-        <div class="item">Ques 2</div>
-        <div class="item">Opt 3</div>
-        <div class="item"><input class="A" name="ques" type="radio" /></div>
-        <div class="item">Ques 3</div>
-        <div class="item">Opt 4</div>
-        <div class="item"><input class="A" name="ques" type="radio" /></div>
-        <div class="item">Ques 4</div>
-      </div>
+  <title>Document</title>
+</head>
+
+<body onload="displayfirstquestion()">
+
+  <div id="center">
+    <!--id="content" -->
+    <div class="grid-container" id="content">
+      <div class="item">Opt 1</div>
+      <div class="item"><input class="A" name="ques" type="radio" /></div>
+      <div class="item">Ques 1</div>
+      <div class="item">Opt 2</div>
+      <div class="item"><input class="A" name="ques" type="radio" /></div>
+      <div class="item">Ques 2</div>
+      <div class="item">Opt 3</div>
+      <div class="item"><input class="A" name="ques" type="radio" /></div>
+      <div class="item">Ques 3</div>
+      <div class="item">Opt 4</div>
+      <div class="item"><input class="A" name="ques" type="radio" /></div>
+      <div class="item">Ques 4</div>
     </div>
+  </div>
 
+
+
+
+  <div class="text-center">
     Answers:<div id="answers"> </div>
     Your score:<div id="score"> </div>
-
     <button class="btn btn-warning" onclick="displaynextquestion()">
       next
     </button>
     <button class="btn btn-warning" onclick="displaypreviousquestion()">
       prev
     </button>
-    <button class="btn btn-warning" onclick="checkanswer()">
-      check answer
-    </button>
     <button class="btn btn-warning" onclick="startagain()">start again</button>
+  </div>
 
-    <script src="assets/js/jquery.min.jsm.js"></script>
-    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
-    <script src="assets/js/question.js"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
+
+  <script src="assets/js/jquery.min.jsm.js"></script>
+  <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/js/question.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>

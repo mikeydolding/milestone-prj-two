@@ -20,26 +20,27 @@
 
 ## Overview
 
-Simple Static front website for a Legal Tech business. The value that it provides to its users is information about the Legal Tech Business.
+Simple website for a quiz. The site can be reused iby replacineg specifically formatted javascript questions file.
 
-- Logo, Nav menu and four pages Home page(index) , Services , Contact, About us.
+- Logo
 - HTML5
 - CSS3 code
 - Bootstrap
+- Jquery
+- Javascript
 
 ## User Experience (UX)
 
 - #### First Time Visitor Goals
 
-  1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the company.
+  1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more the topic of the quiz.
 
-     1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with the company logo.
-     2. The main points are made immediately with the hero image logo, home page 'What we do text' and bottom title and address of company. 
-     3. The user has navbar menu options to choose four different pages to learn more about the organisation.
+     1. Upon entering the site, users are automatically greeted with a clear logo and instructions.
+     2. The main points are made immediately with the hero image logo, choose your answer and click on the buttons check answers. \
 
-  2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
+  2. As a First Time Visitor, I want to be able to easily be able to navigate back and forward across the quiz quesitons
 
-     1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
+     1. The site has previous and next navigation options at the bottom.
 
 - #### Returning Visitor Goals
 
@@ -94,7 +95,9 @@ Simple Static front website for a Legal Tech business. The value that it provide
 
 ### Testing
 
-In testing the simple website worked without bugs.
+In testing the  website worked on github pages. In testing on mobile, however, a number of bugs were discovered:
+
+- Layout not optimised. Mob howile, however beyond the scope of the assessment.
 
 ## Deployment
 

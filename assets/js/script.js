@@ -1,16 +1,15 @@
-score = [];
-answers = [];
-counter = 0;
+var score = [];
+var answers = [];
+var counter = 0;
 const results = document.getElementById("answers");
 const finalscore = document.getElementById("score");
-a = "a";
-b = "b";
-c = "c";
-d = "d";
+const a = "a";
+const b = "b";
+const c = "c";
+const d = "d";
 
 function lastpage() {
   let total = 0;
-
   for (const value of score) {
     total += value;
   }
@@ -31,16 +30,17 @@ function startagain() {
   counter = 0;
   results.innerHTML = "";
 }
+
 function displaynextquestion() {
   counter++;
   console.log(score);
-
   if (counter == questions.length) {
     lastpage();
   }
   if (counter < questions.length) displayquestion();
   results.innerHTML = answers;
 }
+
 function displaypreviousquestion() {
   if (counter > 0) counter--;
   displayquestion();
@@ -51,8 +51,6 @@ function displayfirstquestion() {
 }
 
 function recordanswer(element, user_choice, correct_answer) {
-  console.log(element.toString());
-  console.log(correct_answer);
   answers[counter] = user_choice;
   if (element == correct_answer) {
     score[counter] = 1;
@@ -65,7 +63,6 @@ function recordanswer(element, user_choice, correct_answer) {
 }
 
 function displayquestion() {
-  console.log("number of questions=" + questions.length);
   let display = document.querySelector("#content");
   if (questions[counter].Type == 1) {
     let replacement =
@@ -105,21 +102,7 @@ function displayquestion() {
 
   if (questions[counter].Type == 3) {
     let replacement =
-      '<div class="item"> </div> <div class="item"> </div> <div class="item"> ' +
-      questions[counter].Question +
-      "  </div>" +
-      '<div class="item"> A </div> <div class="item" > <input name ="ques" type="radio" onclick="recordanswer(a,questions[counter].a,questions[counter].correct)"> </div> <div class="item">' +
-      questions[counter].a +
-      " </div>" +
-      '<div class="item"> B </div> <div class="item"> <input name ="ques" type="radio" onclick="recordanswer(b,questions[counter].b,questions[counter].correct)"> </div> <div class="item">' +
-      questions[counter].b +
-      " </div>" +
-      '<div class="item"> C </div> <div class="item ""> <input name ="ques" type="radio" onclick="recordanswer(c,questions[counter].c,questions[counter].correct)"> </div> <div class="item">' +
-      questions[counter].c +
-      "</div>" +
-      '<div class= "item"> D </div> <div class="item" > <input name ="ques" type="radio" onclick="recordanswer(d,questions[counter].d,questions[counter].correct)"> </div> <div class="item">' +
-      questions[counter].d +
-      "</div>";
+      `<div class="item"> </div> <div class="item"> </div> <div class="item"> ${questions[counter].Question}  </div><div class="item"> A </div> <div class="item" > <input name ="ques" type="checkbox" onclick="recordanswer(a,questions[counter].a,questions[counter].correct)"> </div> <div class="item">${questions[counter].a} </div><div class="item"> B </div> <div class="item"> <input name ="ques" type="checkbox" onclick="recordanswer(b,questions[counter].b,questions[counter].correct)"> </div> <div class="item">${questions[counter].b} </div><div class="item"> C </div> <div class="item ""> <input name ="ques" type="checkbox" onclick="recordanswer(c,questions[counter].c,questions[counter].correct)"> </div> <div class="item">${questions[counter].c}</div><div class= "item"> D </div> <div class="item" > <input name ="ques" type="checkbox" onclick="recordanswer(d,questions[counter].d,questions[counter].correct)"> </div> <div class="item">${questions[counter].d}</div>`;
     display.innerHTML = replacement;
   }
 }
