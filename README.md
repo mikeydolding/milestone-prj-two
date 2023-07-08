@@ -1,6 +1,6 @@
 <h1 align="center">Mikedolding Milestone Project 2</h1>
 
-- [Web Legal Quiz](#WebfreeLegalTech)
+- [Web Legal Quiz](#WebLegalQuiz)
   - [Overview](#overview)
   - [User Experience (UX)](#User-Experience)
   - [Design](#design)
@@ -16,7 +16,7 @@
   - [Credits & Attributions](#credits)
   - [Acknowledgements](#acknowledgements)
 
-## WebfreeLegalTech [View the live project here.](https://mikeydolding.github.io/milestone-prj-two/)
+## WebLegalQuiz [View the live project here.](https://mikeydolding.github.io/milestone-prj-two/)
 
 ## Overview
 
@@ -78,7 +78,8 @@ Simple website for a quiz. The site can be reused iby replacineg specifically fo
 In testing the  website worked on github pages. In testing on mobile, however, a number of bugs were discovered:
 
 - Layout not optimised. Mob howile, however beyond the scope of the assessment.
-- ![validated HTML and CSS code](assets/images/ESLint.png)
+- Javascript code tested on VScode ESLint plugin:
+- [validated HTML and CSS code](assets/images/ESLint.png)
 
 ## Deployment
 
