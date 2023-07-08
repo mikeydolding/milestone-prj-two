@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<title>Document</title>
+  <link href="css/style.css" rel="stylesheet">
+  </head>
+<body onload="displayfirstquestion()">
+  <header> 
+    <div>
+      <img src="images/legaltech.jpg" width="50%">     
+  </div>  
+    </header>
+
+<div id="center">
+   <!--id="content" -->
+<div class="grid-container" id="content">
+	<div class="item">Opt 1</div><div  class="item"><input class="A" name ="ques" type="radio"></div><div class="item">Ques 1</div>
+	<div class="item">Opt 2</div><div class="item"><input class="A"     name ="ques" type="radio"></div><div class="item">Ques 2</div>
+	<div class="item">Opt 3</div><div class="item"><input  class="A"    name="ques" type="radio"></div><div class="item">Ques 3</div>
+	<div class="item">Opt 4</div><div class="item"><input class="A"   name ="ques" type="radio"></div><div class="item">Ques 4</div>
+</div>
+</div>
+
+<button class="btn-warning"   onclick="displaynextquestion()"> next</button>
+<button class="btn-warning"    onclick="displaypreviousquestion()">  prev </button> 
+<button class="btn-warning"    onclick="checkanswer()">  check answer </button> 
+<button class="btn-warning"    onclick="startagain()"> start again  </button>           
+
+<script src="question.js"></script>
+</script>
+
+
+<script src='js/script.js'>
+</script>
+</body>
+</html>
+
+
+
+		
